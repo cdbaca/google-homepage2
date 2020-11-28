@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.center {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.header, .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

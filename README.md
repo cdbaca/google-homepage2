@@ -1,0 +1,1 @@
+This is the second go round on my "rebuilding the Google homepage" project. I've done this once, but it has been too long and I want to make sure I remember how to do this.

@@ -3,30 +3,65 @@ body {
 }
 
 a {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: Arial, sans-serif;
+    color: gray;
+    padding: 10px;
+}
+
+.container, html, body {
+    height: 100%;
 }
 
 .container {
-    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50px 87% auto;
 }
 
 .header {
     grid-column: 1/4;
     grid-row: 1/2;
+    align-items: baseline;
+}
+
+.left-header, .right-header {
+    position: relative;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 14px;
 }
 
 .center {
+    display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
     grid-column: 1/4;
     grid-row: 3/4;
+    align-items: baseline;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    font-size: 14px;
+    justify-content: space-between;
+    border-top: 1px solid rgb(218, 220, 224);
+}
+
+.left-footer {
+    grid-column: 1/2;
+}
+
+.center-footer {
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.right-footer {
+    grid-column: 3/4;
 }
 
 .header, .footer {
